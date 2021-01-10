@@ -1,0 +1,395 @@
+*{
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: capitalize;
+}
+:root {
+  --main-blue:#08526D;
+  --main-red: #EC1C23;
+}
+::selection{
+  background-color: #333;
+  color: #fff;
+}	      
+p{
+  color: #777;
+}
+button{
+  background-color: var(--main-red);
+  color: #fff;
+  border: 2px solid var(--main-red);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+button:hover{
+  color:  var(--main-red);
+  background-color: transparent;
+}
+.normal-button{
+  font-size: 1rem;
+}
+/* -------------------- upper nav ------------------- */
+.upper-nav{
+  background-color: #08526D;
+}
+.upper-nav .contact-info{
+  font-size: 90%;
+}
+.upper-nav .guote-link a{
+  color: var(--main-red) !important;
+  text-decoration: none;
+}
+/* -------------------- upper nav ------------------- */
+nav.navbar .navbar-brand{
+  font-size: 2rem;
+  color: var(--main-blue);
+}
+nav.navbar .navbar-brand span{
+  color: var(--main-red);
+}
+nav.navbar .nav-item.active .nav-link{
+  color: var(--main-red);
+}
+nav.navbar .nav-item:hover .nav-link{
+  color: var(--main-red);
+}
+nav.navbar .nav-item .nav-link{
+  color: var(--main-blue);
+  transition: all 0.5s ease-in-out;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover{
+  color:var(--main-blue);
+}
+/* -------------------- carousel ------------------- */
+header .carousel h1{
+  z-index: 3;
+  line-height: 1.5;
+}
+header .carousel h1 span{
+  background-color: var(--main-red);
+}
+header .carousel .carousel-inner .overlay{
+  z-index: 2;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+header .carousel .carousel-inner .carousel-item{
+  background-position: center;
+  background-size: cover;
+  transition: all 0.8s ease-in-out;
+  height: 100%;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+header .carousel .carousel-item:nth-of-type(2){
+  background-image: url('../sourse/bg-3.jpg');
+}
+header .carousel .carousel-item:nth-of-type(3){
+  background-image: url('../sourse/bg-2.jpg');
+}
+header .carousel .carousel-item:nth-of-type(4){
+  background-image: url('../sourse/bg-1.jpg');
+}
+header .carousel .carousel-item:nth-of-type(5){
+  background-image: url('../sourse/bg-4.jpg');
+}
+header .carousel .carousel-item:nth-of-type(6){
+  background-image: url('../sourse/bg-5.jpg');
+}
+header .carousel .carousel-indicators li{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  /* background-color: transparent; */
+  /* border: 1px solid #fff; */
+}
+header .carousel .carousel-indicators li.active{
+  background-color: #fff;
+}
+/* -------------------- feather ------------------- */
+.feather .feat .icon i{
+  background-color: var(--main-red);
+  color: #fff;
+  width: 64px;
+  line-height: 64px;
+  height: 64px;
+}
+.feather .feat h5{
+  color: var(--main-blue);
+  font-weight: bold;
+}
+/* -------------------- over-view ------------------- */
+.over-view{
+  background-color: #f0f5f7;
+}
+.over-view .start{
+  letter-spacing: 3px;
+}
+
+/* -------------------- feather-work ------------------- */
+.feather-work ul li{
+  color: var(--main-blue);
+  border: 2px solid var(--main-blue);
+  line-height: 1.5;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.feather-work ul li.active, .feather-work ul li:hover{
+  color: #fff;
+  background-color: var(--main-red);
+  border: 2px solid var(--main-red);
+}
+.feather-work .galary .row,.feather-work .galary .row>div{
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.feather-work .galary img{
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+/* -------------------- latest-post ------------------- */
+.latest-post .card{
+  box-shadow: 0px 3px 15px rgba(22, 41, 124, 0.1);
+  -webkit-box-shadow: 0px 3px 15px rgba(22, 41, 124, 0.1);
+  -moz-box-shadow: 0px 3px 15px rgba(22, 41, 124, 0.1);
+  -ms-box-shadow: 0px 3px 15px rgba(22, 41, 124, 0.1);
+  -o-box-shadow: 0px 3px 15px rgba(22, 41, 124, 0.1);
+}
+.latest-post .card .card-title{
+  color: var(--main-blue);
+}
+.latest-post .card .card-subtitle{
+  color: #acacac;
+}
+.latest-post .card button{
+  background-color: transparent;
+  color: var(--main-red)
+}
+.latest-post .card button:hover{
+  background-color: var(--main-red);
+  color: #fff;
+}
+/* -------------------- testemonial ------------------- */
+.testemonial {
+  background-image: url('../sourse/bg-3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.testemonial .carousel .carousel-indicators li{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  /* background-color: transparent; */
+  /* border: 1px solid #fff; */
+}
+.testemonial .carousel .carousel-indicators li.active{
+  background-color: #fff;
+}
+.testemonial .overlay{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* -------------------- pricing ------------------- */
+.pricing{
+  background-color: #f0f5f7;
+}
+.pricing .col-price{
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.pricing .col-price.pro{
+  top: -25px;
+  color: var(--main-blue);
+}
+.pricing .col-price.pro .h-price{
+  background-color: var(--main-red);
+  color: #fff;
+}
+.pricing .col-price.pro .content button:hover{
+  color: var(--main-blue);
+  background-color: transparent;
+  border-color: var(--main-blue);
+}
+.pricing .col-price.pro .content button{
+  border-color: var(--main-blue);
+  background-color: var(--main-blue);
+}
+/* -------------------- choose-us ------------------- */
+.choose-us .img{
+  background-image: url('../sourse/choose.jpg');
+  background-position: center;
+  background-size: cover;
+}
+/* -------------------- customer ------------------- */
+.customer i , .customer h3{
+  color: var(--main-blue);
+}
+.customer h5{
+  color: var(--main-red);
+}
+/* -------------------- think ------------------- */
+.think{
+  background-color: var(--main-red);
+}
+.think button{
+  border-color: #fff;
+  font-size: 1.3rem;
+}
+.think button:hover{
+  color: var(--main-red);
+  background-color: #fff;
+}
+/* -------------------- footer ------------------- */
+footer a{
+  text-decoration: none;
+}
+footer a:hover{
+  text-decoration: none;
+}
+footer .info a{
+  color:  var(--main-blue);
+}
+footer .info a span{
+  color: var(--main-red);
+}
+footer .info > a::before{
+  content: '\f138';
+  display: inline-block;
+  margin-right: 2px;
+  font-family: "Font Awesome 5 Free";
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+footer .info > a:hover::before{
+  margin-right: 5px;
+}
+footer .links h3, footer .contact h3{
+  color:  var(--main-blue);
+}
+footer .links .links-1 ul li a::before, footer .links .links-2 ul li a::before{
+  content: "\f054";
+  font-weight: 900;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-right: 3px;
+  font-family: "Font Awesome 5 Free";
+}
+footer .links .links-1 ul li a:hover, footer .links .links-2 ul li a:hover{
+  color:  var(--main-red);
+  padding-left: 5px;
+}
+footer .links .links-1 ul li a, footer .links .links-2 ul li a{
+  color:  var(--main-blue);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+footer .contact p span{
+  color:  var(--main-blue);
+}
+footer .contact p a{
+  color:  var(--main-blue);
+}
+footer .footer{
+  color: #333;
+}
+footer .footer .copyRight i {
+  animation: pulse 1.7s ease-in-out infinite;
+  color: #ff2035;
+  margin: 0 3px;
+  transition: all ease-in-out .7s;
+}
+
+footer .footer .copyRight i:hover {
+  color: var(--main-blue);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  5% {
+    transform: scale(1.3);
+  }
+
+  10% {
+    transform: scale(1);
+  }
+}
+
+footer .footer .copyRight a{
+  transition: .5s all ease-in-out;
+  color: var(--main-red);
+}
+footer .footer .links li i{
+  cursor: pointer;
+  transition: all 0.5s  ease-in-out;
+  -webkit-transition: all 0.5s  ease-in-out;
+  -moz-transition: all 0.5s  ease-in-out;
+  -ms-transition: all 0.5s  ease-in-out;
+  -o-transition: all 0.5s  ease-in-out;
+}
+footer .footer .copyRight a:hover,footer .footer .links li i:hover {
+  text-decoration: none;
+  color: var(--main-blue);
+}
+/* -------------------- upper ------------------- */
+
+
+
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+@media (max-width: 768px) {
+  header .carousel h1{
+    font-size: 2.5rem;  
+  }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+@media (max-width: 992px) { 
+  .pricing .col-price.pro{
+    top: 0;
+  }
+ }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
